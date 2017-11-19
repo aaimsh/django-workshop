@@ -1,0 +1,19 @@
+{% comment %}
+  https://docs.djangoproject.com/en/1.11/ref/templates/
+  https://docs.djangoproject.com/en/1.11/topics/templates/
+{% endcomment %}
+
+{% block content %}
+{% if blog_list  %}
+  <ul>
+{% for blog  in blog_list %}
+  <li>
+    <a href={% url 'blog:detail' blog.id %}>{{ blog.title}}</a>
+  </li>
+{% endfor %}
+</ul>
+{% else %}
+  <p>Sorry there is no Blogs available for now.</p>
+{% endif %}
+<a href={% url 'blog:create' %}>clicke here to create a blog</a>
+{% endblock content %}

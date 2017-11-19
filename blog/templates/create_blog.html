@@ -1,0 +1,7 @@
+{% comment %}
+  https://docs.djangoproject.com/en/1.11/ref/csrf/
+{% endcomment %}
+<form action="" method="post">{% csrf_token %}
+   {{form.as_p}}
+   <input type="submit">
+</form>
