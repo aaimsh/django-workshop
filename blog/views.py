@@ -3,6 +3,7 @@ https://docs.djangoproject.com/en/1.11/topics/http/views/
 https://docs.djangoproject.com/en/1.11/topics/http/decorators/
 https://docs.djangoproject.com/en/1.11/ref/class-based-views/
 https://docs.djangoproject.com/en/1.11/ref/request-response/
+https://docs.djangoproject.com/en/1.11/topics/http/shortcuts/
 """
 from django.views import generic
 from django.shortcuts import render, get_object_or_404, get_list_or_404, redirect
