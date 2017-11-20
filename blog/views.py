@@ -21,7 +21,6 @@ def blog(request, blog_id):
     context = {'blog': blog}
     return render(request, 'detail.html', context)
 
-@login_required(login_url='blog:index')
 def create_blog(request):
     if request.method == 'POST':
         form = forms.BlogForm(request.POST)
